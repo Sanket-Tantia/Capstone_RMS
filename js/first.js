@@ -1,19 +1,14 @@
 
 
-var app = angular.module('rmsApp', [ 'ngRoute', 'angular-hal' ]);
+/*var app = angular.module('rmsApp', ['ngRoute']);
 
 
 app.config(function($routeProvider) {
 
-
-	$routeProvider.when('/', {
-		templateUrl : '/js/app/app.html',
-		controller : 'appController'
-	})
-	.when('/announcements', {
+	$routeProvider.when('/announcements', {
 		templateUrl : '/js/announcements/announcements.html',
 		controller : 'announcementController',
-		resolve: {
+		/*resolve: {
        	 usersResource: function($rootScope) {
        		if ($rootScope.resource)
         		 return $rootScope.resource.$get('users', {
@@ -38,7 +33,7 @@ app.config(function($routeProvider) {
            		else
            			 return {};
            	 	}
-            }*/
+            }
     	})
     	.when('/sendEmailForm', {
         		templateUrl : '/js/sendEmailForm/sendEmailForm.html',
@@ -53,7 +48,7 @@ app.config(function($routeProvider) {
                		else
                			 return {};
                	 	}
-                }*/
+                }
       })
       .when('/uploadAnnouncements', {
                     		templateUrl : '/js/uploadAnnouncements/uploadAnnouncements.html',
@@ -68,7 +63,7 @@ app.config(function($routeProvider) {
                            		else
                            			 return {};
                            	 	}
-                            }*/
+                            }
                     	})
 .when('/operations', {
         		templateUrl : 'operations.html',
@@ -83,27 +78,31 @@ app.config(function($routeProvider) {
                		else
                			 return {};
                	 	}
-                }*/
+                }
         	})
         	.when('/login', {
         		templateUrl : '/js/login/login.html',
         		controller : 'loginController'
         	})
           .otherwise({
-          		redirectTo : '/login'
+          		redirectTo : '/operations'
           	});
+  });*/
+
+var app = angular.module('rmsApp',['ui.router']);
+
+app.config(function($stateProvider, $urlRouterProvider){
+
+  $stateProvider
+  .state('operations',{
+    url: '/operations',
+    templateUrl: 'operations.html',
+    controller: 'OpController'
   })
-
-.controller('appController', ['$rootScope','$scope','halClient',
-		function($rootScope, $scope, halClient) {
-			$scope.root = function() {
-				halClient.$get('/api', {
-					linksAttribute : "_links"
-				}).then(function(resource) {
-					$rootScope.resource = resource;
-				});
-			};
-
-			$scope.root();
-
-		} ]);
+  .state('signup',{
+    url: '/signup',
+    templateUrl: 'signup.html',
+    controller: 'SignupCtrl'
+  })
+  $urlRouterProvider.otherwise('/operations');
+});
