@@ -7,12 +7,17 @@ app.config(function($stateProvider, $urlRouterProvider){
   .state('operations',{
     url: '/operations',
     templateUrl: 'operations.html',
-    controller: 'OpController'
+    controller: 'OpCtrl'
   })
-  .state('announcement',{
-    url: '/announcement',
+  .state('announcements',{
+    url: '/announcements',
     templateUrl: 'announcements.html',
     controller: 'AnCtrl'
   })
-  $urlRouterProvider.otherwise('/operations');
+  .state('login',{
+    url: '/login',
+    templateUrl: 'login.html',
+    controller: 'LoginCtrl'
+  })
+  $urlRouterProvider.otherwise('/login');
 });

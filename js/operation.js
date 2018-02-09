@@ -1,7 +1,7 @@
 
 var app = angular.module('rmsApp');
 
-app.controller('OpController', function($scope, $state){
+app.controller('OpCtrl', function($scope, $state){
 //app.controller('OpController', function($routeProvider, $scope){
 
     $('.datepicker').pickadate({

@@ -1,0 +1,20 @@
+<div class="container" ng-show="!authenticated">
+    <ul class="nav nav-pills" role="tablist">
+        <!--<li ng-show="!authenticated"><a href="#/login">Login</a></li>-->
+    </ul>
+    <div id="login-button">
+        <img src="/js/images/login-w-icon.png"></img>
+    </div>
+    <div id="containerLogin">
+        <h1>Log In</h1>
+        <span class="close-btn">
+        <img src="/js/images/circle_close_delete_-128.png"></img>
+        </span>
+
+        <form role="form" ng-submit="login()">
+            <input type="text" name="email" placeholder="E-mail" ng-model="credentials.username"/>
+            <input type="password" name="pass" placeholder="Password" ng-model="credentials.password"/>
+            <button class="btn btn-primary" type="submit">Sign in</button>
+        </form>
+    </div>
+</div>
