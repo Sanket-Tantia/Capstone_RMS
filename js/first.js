@@ -9,9 +9,9 @@ app.config(function($stateProvider, $urlRouterProvider){
     templateUrl: 'operations.html',
     controller: 'OpCtrl'
   })
-  .state('announcements',{
-    url: '/announcements',
-    templateUrl: 'announcements.html',
+  .state('announcement',{
+    url: '/announcement',
+    templateUrl: 'announcement.html',
     controller: 'AnCtrl'
   })
   .state('login',{
