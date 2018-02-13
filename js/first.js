@@ -9,6 +9,7 @@ app.config(function($stateProvider, $urlRouterProvider){
     templateUrl: 'operations.html',
     controller: 'OpCtrl'
   })
+  
   .state('announcement',{
     url: '/announcement',
     templateUrl: 'announcement.html',
