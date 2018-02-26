@@ -1,6 +1,3 @@
-
-var app = angular.module('rmsApp');
-
 app.controller('OpCtrl', function($scope, $state){
 //app.controller('OpController', function($routeProvider, $scope){
 
