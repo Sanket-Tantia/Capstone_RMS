@@ -67,8 +67,8 @@ div.borderXwidth a.animateMe:hover:before, div.borderXwidth a.animateMe:hover:af
 
 #carousel_announcements img{
     width: 100%;
-    height: 625px;
-    max-height: 625px;
+    height: 500px;
+    max-height: 500px;
 }
 
 
@@ -98,35 +98,66 @@ div.borderXwidth a.animateMe:hover:before, div.borderXwidth a.animateMe:hover:af
     display: block;
 }
 
+/*//to remove the dots*/
+.carousel-indicators li { visibility: hidden; }
 
-section::after {
-  width: 100%;
-  height: 60%;
-  /*background: -webkit-linear-gradient(top,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 80%,rgba(0,0,0,.8) 80%);
-  background: linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 80%,rgba(0,0,0,.8) 80%);*/
+.carousel-caption {
+    visibility: hidden;
 }
 
-#section05 { background: #009688
-text-align:center;}
+
+/*
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  height: 100%;
+}
+section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+section::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 80%;
+  background: -webkit-linear-gradient(top,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 80%,rgba(0,0,0,.8) 100%);
+  background: linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 80%,rgba(0,0,0,.8) 100%);
+  }*/
+
+  #section05 {
+    /*zoom: 0.9;
+    -moz-transform: scale(0.9);*/
+    background: linear-gradient(#2c3e50,#7f8c8d);
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    /*box-shadow: inset 0 0 20px #2c3e50;*/
+}
 
 .demo a {
-  z-index: 2;
+  margin-top: 40px;
   display: inline-block;
   -webkit-transform: translate(0, -50%);
   transform: translate(0, -50%);
   color: #ffffff;
-  font : normal 400 20px/1 'Raleway';
+  font: 14px Raleway;
+  /*font-style: italic;*/
+  letter-spacing: .1em;
   text-decoration: none;
   transition: opacity .3s;
 }
 .demo a:hover {
-  opacity: .5;
+  opacity: .4;
 }
 
-
 #section05 a {
-    background-position: center;
-    text-align: center;
   padding-top: 70px;
 }
 #section05 a span {
@@ -136,39 +167,109 @@ text-align:center;}
   width: 24px;
   height: 24px;
   margin-left: -12px;
-  border-left: 1px solid #ffffff;
-  border-bottom: 1px solid #ffffff;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
   -webkit-animation: sdb05 1.5s infinite;
   animation: sdb05 1.5s infinite;
   box-sizing: border-box;
 }
-@-webkit-keyframes sdb05 {  
+@-webkit-keyframes sdb05 {
   0% {
     -webkit-transform: rotate(-45deg) translate(0, 0);
     opacity: 0;
-  }
-  50% {
+}
+50% {
     opacity: 1;
-  }
-  100% {
+}
+100% {
     -webkit-transform: rotate(-45deg) translate(-20px, 20px);
     opacity: 0;
-  }
+}
 }
 @keyframes sdb05 {
   0% {
     transform: rotate(-45deg) translate(0, 0);
     opacity: 0;
-  }
-  50% {
+}
+50% {
     opacity: 1;
-  }
-  100% {
+}
+100% {
     transform: rotate(-45deg) translate(-20px, 20px);
     opacity: 0;
+}
+}
+
+#GridCtrl {
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  line-height:  2rem;
+}
+
+.container {
+  width: 90%;
+  max-width: 1280px;
+  margin: 0px auto;
+}
+
+.dynamic-grid {
+  position: relative;
+  z-index: 1;
+  columns: 240px 3;
+  column-gap: 15px;
+  &.container {
+    padding-top: 6rem;
   }
+}
+.grid-item {
+  position: relative;
+  display: inline-block;
+  margin: 1rem;
+  max-width: 100%;
+  column-break-inside: avoid;
+}
+.grid-item .inner {
+    padding: 1rem 1rem 1rem 1rem;
+  }
+.content-box {
+  border: 0px solid rgba(230,230,230,1);
+  background-color: rgba(255,255,255, 1);
+  box-shadow: 0px -1px 2px rgba(58,58,58,0.1), 1px 1px 2px rgba(58,58,58,0.1);
+  
+  &:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 4rem;
+    left: 0px;
+    top: 0px;
+  }
+  
+}
+.content-box-thumb {
+  display: block;
+  width: auto;
+  height: auto;
+}
+
+.content-box-header {
+  font-size: 2rem;
+  margin: 0.75rem 0rem 0rem 0rem;
 }
 
 
+.content-box-blurb {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  display: block;
+  display: -webkit-box;
+  margin: 0rem;
+  max-width: 100%;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

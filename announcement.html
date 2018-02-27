@@ -29,37 +29,24 @@
   </carousel>
 </div>
 
-<section id="section05" class="demo">
-  <a href="#section06"><span></span>Upcoming Annnouncements</a>
-</section>
-
-
-<div class="container-fluid" style="margin-top:10px;">
-	<div class="row">
-    <div class="col-sm-4">
-      <div class="card">
-        <img class="card-img-top" src="img/pic1.jpg" alt="Card image cap">
-        <div class="card-block">
-          <p class="card-text">Announcement4</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="card">
-        <img class="card-img-top" src="img/pic2.jpg" alt="Card image cap">
-        <div class="card-block">
-          <p class="card-text">Announcement5</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-4">
-     <div class="card">
-      <img class="card-img-top" src="img/pic3.jpg" alt="Card image cap">
-      <div class="card-block">
-        <p class="card-text">Announcement6</p>
-      </div>
-    </div>
-  </div>
-
+<div id="section05" class="demo">
+  <a><span></span>Upcoming Annnouncements</a>
 </div>
+
+
+<div id="GridCtrl">
+  <div class="container dynamic-grid">
+    <article class="grid-item content-box" ng-repeat="(gridKey, gridItem) in gridItems | filter:filterBySearch">
+      <div class="inner">
+        <img class="content-box-thumb" src="{{ gridItem.img }}" alt="tech image"  style="height:250px; width:400px;"/>
+        <h1 class="content-box-header">
+          {{ gridItem.headerText }}
+        </h1>
+        <p class="content-box-blurb">
+          {{ gridItem.blurbText }}
+        </p>
+      </div>
+    </article><!-- /.content-box -->
+
+  </div><!-- /.dynamic-grid -->
 </div>

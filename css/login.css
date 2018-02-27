@@ -1,7 +1,9 @@
+@import 'https://fonts.googleapis.com/css?family=Raleway';
+
 .login_h2{
 	margin: 0;
 	padding: 0;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Raleway', Raleway;
     color: #80685e;
 }
 
@@ -11,27 +13,26 @@
 }
 body{
     margin: 0;
+    zoom: 0.9;
+    -moz-transform: scale(0.9);
 }
 
 
 .agile-login {
-	padding-top: 300px;
-    background: url('../img/5copy.jpg') no-repeat;
+	padding-top: 230px;
+    background: url('../img/background.jpg') no-repeat;
     background-size: cover;
     margin: 0;
-    min-height: 77vh;
+    min-height: 86vh;
     background-position: center;
 }
 .login_shadowbox {
-    zoom: 0.9;
-    -moz-transform: scale(0.9);
-    width: 650px;
-    height: 350px;
+    width: 100%;
+    height: 450px;
     margin: auto;
-    border-radius: 20px; 
     text-align: center;
     padding: 3% 0px;
-    /*background-color: rgba(230, 230, 230, 0.2);*/
+    background-color: rgba(255,205,210 ,0.3);/*rgba(255,138,128 ,0.2);*/
     /*background-color: rgba(7, 5, 5, 0.6);*/
 	webkit-box-shadow: 10px 3px 66px -19px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 3px 66px -19px rgba(0,0,0,0.75);
@@ -69,16 +70,17 @@ body{
 
 .login_shadowbox h2 {
 	margin-bottom: 30px;
-    padding-top: 20px;
+    padding-top: 50px;
     font-size: 26px;
     color: #3d3633;
     font-weight: 500;
     letter-spacing: 2px;
+    /*box-shadow: inset 0 0 100px #ffffff;*/
 }
 a.login_link {
     font-size: 15px;
 	    color: #7a6c66;
-		font-family: 'Open Sans', sans-serif;
+		font-family: 'Raleway', Raleway;
 		    letter-spacing: 2px;
             padding-top: 5px;
 }
@@ -101,7 +103,7 @@ a.login_link {
 	cursor: pointer;
     width: 100%;
 	letter-spacing: 1px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', Raleway;
 }
 .login_button:hover {
     color: #fff;
