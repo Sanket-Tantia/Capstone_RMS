@@ -1,0 +1,38 @@
+
+<link rel="stylesheet" href="css/uploadannouncement.css">
+<br><br>
+	<h1 class="upload_heading">Upload announcements</h1>
+
+	<form id="upload" method="post" enctype="multipart/form-data">
+		<div class="same_line">
+			<label class="upload_label">Title</label>
+			<input class="upload_input" type="text" name="title" placeholder="Announcement's title">
+		</div>
+		<div class="same_line">
+			<label class="upload_label">Description</label>
+			<input class="upload_input" type="text" name="description" placeholder="Describe your announcement">
+		</div>
+		<div class="same_line">
+			<label class="upload_label">Start Date</label>
+			<input class="upload_input" type="text" name="start_date" placeholder="(DD/MM/YYYY)">
+		</div>
+		<div class="same_line">
+			<label class="upload_label">End Date</label>
+			<input class="upload_input" type="text" name="end_date" placeholder="(DD/MM/YYYY)">
+		</div>
+		<div class="same_line">
+			<label class="upload_label" for="check_mail">Send Mail</label>
+			<input type="checkbox" name="check_mail" value="check_mail">
+		</div>
+		<div class="same_line hidden">
+			<label class="upload_label">Email Id</label>
+			<input class="upload_input" type="email" name="send_mail" placeholder="People wou want to inform">
+		</div>
+		<br>
+		<div id="drop">
+			Select Image<br>
+			<a>Browse</a>
+			<input type="file" name="upl" multiple />
+		</div>
+
+	</form>

@@ -3,11 +3,14 @@
 <link rel="stylesheet" href="css/announcement.css">
 
 <div class="nav_bar_container navbar_color borderXwidth">
+  <!-- <div style="text-align: left;vertical-align: middle;">
+    <a>TEKSystems RMS</a>
+  </div> -->
   <a class="animateMe">Announcement</a>
   <a class="animateMe">Operations</a>
   <a class="animateMe">Exit Portal</a>
   <a><i class="material-icons">notifications</i></a>
-  <a><i class="material-icons">library_add</i></a>
+  <a href="#/uploadannouncemnet"><i class="material-icons">library_add</i></a>
   <div class="dropdown"  >
     <a><i class="material-icons">person_outline</i></a>
     <div class="dropdown-content" >
@@ -29,24 +32,19 @@
   </carousel>
 </div>
 
-<div id="section05" class="demo">
-  <a><span></span>Upcoming Annnouncements</a>
+<div id="section05">
+  Upcoming announcements
 </div>
 
+<div class="announcement_container">
+  <div align="center" class="announcement_inner announcement_content-box" ng-repeat="gridItem in gridItems">
+    <img class="content-box-image" src="{{ gridItem.img }}" alt="tech image"  style="height:200px; width:350px;"/>
+    <h1 class="content-box-header">
+      {{ gridItem.headerText }}
+    </h1>
+    <p class="content-box-blurb">
+      {{ gridItem.blurbText }}
+    </p>
+  </div>
+</div><!-- /.dynamic-grid -->
 
-<div id="GridCtrl">
-  <div class="container dynamic-grid">
-    <article class="grid-item content-box" ng-repeat="(gridKey, gridItem) in gridItems | filter:filterBySearch">
-      <div class="inner">
-        <img class="content-box-thumb" src="{{ gridItem.img }}" alt="tech image"  style="height:250px; width:400px;"/>
-        <h1 class="content-box-header">
-          {{ gridItem.headerText }}
-        </h1>
-        <p class="content-box-blurb">
-          {{ gridItem.blurbText }}
-        </p>
-      </div>
-    </article><!-- /.content-box -->
-
-  </div><!-- /.dynamic-grid -->
-</div>
