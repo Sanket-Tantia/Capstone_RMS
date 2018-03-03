@@ -25,5 +25,10 @@ app.config(function($stateProvider, $urlRouterProvider){
     templateUrl: 'uploadannouncement.html',
     controller: 'uploadAnnouncementCtrl'
   })
+  .state('newform',{
+    url: '/newform',
+    templateUrl: 'newform.html',
+    controller: 'newformCtrl'
+  })
   $urlRouterProvider.otherwise('/login');
 });

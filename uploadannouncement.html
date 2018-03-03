@@ -15,31 +15,31 @@
 		<a href="#">Sign Out</a>
 	</div>
 </div>
-</div><br><br>
-<h1 class="upload_heading">Upload announcements</h1>
+</div>
+<h1 class="upload_heading">Announcement Details</h1>
 
 <form id="upload" method="post" enctype="multipart/form-data">
 	<div class="same_line">
 		<label class="upload_label">Title</label>
-		<input class="upload_input" type="text" name="title" placeholder="Announcement's title">
+		<input class="upload_input" type="text" name="title" placeholder="Announcement's title" required>
 	</div>
 	<div class="same_line">
 		<label class="upload_label">Description</label>
-		<input class="upload_input" type="text" name="description" placeholder="Describe your announcement">
+		<input class="upload_input" type="text" name="description" placeholder="Describe your announcement" required>
 	</div>
 	<div class="same_line">
 		<label class="upload_label">Start Date</label>
-		<input class="upload_input" type="text" name="start_date" placeholder="(DD/MM/YYYY)">
+		<input class="upload_input" type="date" name="start_date" placeholder="(DD/MM/YYYY)" required>
 	</div>
 	<div class="same_line">
 		<label class="upload_label">End Date</label>
-		<input class="upload_input" type="text" name="end_date" placeholder="(DD/MM/YYYY)">
+		<input class="upload_input" type="date" name="end_date" placeholder="(DD/MM/YYYY)" required>
 	</div>
 	<div class="same_line">
 		<label class="upload_label" for="check_mail">Send Mail</label>
-		<input type="checkbox" name="check_mail" value="check_mail">
+		<input id="checked" type="checkbox" name="check_mail" value="check_mail" ng-click="checked()">
 	</div>
-	<div class="same_line hidden">
+	<div  id="showWhenChecked" class="same_line">
 		<label class="upload_label">Email Id</label>
 		<input class="upload_input" type="email" name="send_mail" placeholder="People wou want to inform">
 	</div>
@@ -50,7 +50,7 @@
 			<div class="file-select">
 				<div class="file-select-button" id="fileName">Choose File</div>
 				<div class="file-select-name" id="noFile">No file chosen...</div> 
-				<input type="file" name="chooseFile" id="chooseFile" file-model="imageFile">
+				<input type="file" name="chooseFile" id="chooseFile" file-model="imageFile" required>
 			</div>
 		</div>
 	</div>

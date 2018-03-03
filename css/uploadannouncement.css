@@ -114,6 +114,7 @@ a:hover{
 }
 
 .upload_heading{
+    margin: 7%;
     margin-bottom:-30px; 
     text-align: center;
     color:#373a3d;
@@ -148,8 +149,33 @@ a:hover{
     margin: 7px;
 }
 
+#showWhenChecked{
+    display: none;
+}
+
+input[type="checkbox"] {
+    background: #ecf0f1;
+    border: 1px solid #999;
+    border-radius: 3px;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin-left:10px;
+    -webkit-transition: .15s;
+    vertical-align: middle;
+}
+input[type="checkbox"]:hover { box-shadow: 0 1px 3px rgba(0,0,0,.3); }
+input[type="checkbox"]:checked {
+    background: #2E3134;    
+    box-shadow: 0 0 3px #2E3134;
+}
+
+.hidden{
+
+}
+
 /*----------------------------
-    The file upload form
+The file upload form
 -----------------------------*/
 
 
@@ -159,7 +185,7 @@ a:hover{
     background-image:-webkit-linear-gradient(top, #373a3d, #313437);
     background-image:-moz-linear-gradient(top, #373a3d, #313437);
     background-image:linear-gradient(top, #373a3d, #313437);
-    height: 550px;
+    height: 500px;
     width:400px;
     padding:30px;
     border-radius:11px;
@@ -279,28 +305,31 @@ a:hover{
 }
 
 .upload_button{
-  height: 40px;
-  width: 100px;
-  background: #348AA7;
-  margin-right:40%;
-  border: none;
-  outline: none;
-  color: white;
-  font-weight: 200px;
-  font-size: 18px;
-  border-radius: 3px;
-  box-shadow: 0 5px 0px darken(#348AA7,0%);
-  border-bottom: 2px solid darken(#348AA7,3%);
-  &:hover{
-    background: darken(#348AA7,100%);
-    box-shadow: 0 4px 1px darken(#348AA7,100%);
-    border-bottom: 2px solid darken(#348AA7,100%);
-    transition: all 0.1s ease-in;
-  }
-  
-  &:active{
-    transform:translateY(4px);
-    border-bottom-width: 2px;
-    box-shadow: none;
-  }
+    margin: -20px -50px; 
+    position:relative;
+    margin-top: 10%; 
+    left:50%;
+    height: 40px;
+    width: 100px;
+    background: #348AA7;
+    margin-right:40%;
+    border: none;
+    outline: none;
+    color: white;
+    font-weight: 200px;
+    font-size: 18px;
+    border-radius: 3px;
+    box-shadow: 0 5px 0px darken(#348AA7,0%);
+    border-bottom: 2px solid darken(#348AA7,3%);
+    &:hover{
+        background: darken(#348AA7,100%);
+        box-shadow: 0 4px 1px darken(#348AA7,100%);
+        border-bottom: 2px solid darken(#348AA7,100%);
+        transition: all 0.1s ease-in;
+    }
+
+    &:active{
+        transform:translateY(4px);
+        border-bottom-width: 2px;
+    }
 }
