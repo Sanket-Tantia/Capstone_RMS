@@ -30,5 +30,10 @@ app.config(function($stateProvider, $urlRouterProvider){
     templateUrl: 'newform.html',
     controller: 'newformCtrl'
   })
+  .state('manager',{
+    url: '/manager',
+    templateUrl: 'manager.html',
+    //controller: 'managerCtrl'
+  })
   $urlRouterProvider.otherwise('/login');
 });
