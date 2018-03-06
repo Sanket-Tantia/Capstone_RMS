@@ -37,7 +37,7 @@
 	</div>
 	<div class="same_line">
 		<label class="upload_label" for="check_mail">Send Mail</label>
-		<input id="checked" type="checkbox" name="check_mail" value="check_mail" ng-click="checked()">
+		<input id="checked" type="checkbox" name="check_mail" ng-model="check_mail" ng-true-value="'Yes'" ng-false-value="'No'" ng-click="checked()">
 	</div>
 	<div  id="showWhenChecked" class="same_line">
 		<label class="upload_label">Email Id</label>

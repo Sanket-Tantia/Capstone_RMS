@@ -24,8 +24,10 @@ app.controller('uploadAnnouncementCtrl', ['$scope','multipartForm',function($sco
 	});
 
 
+
 	$scope.submit = function(){
 		var uploadUrl = '';
+		console.log($scope.imageFile);
 		multipartForm.post(uploadUrl,$scope.imageFile);
 	}
 }]);
