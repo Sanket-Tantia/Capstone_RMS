@@ -53,7 +53,7 @@ body
     margin: 8px;
 }
 
-.manform_label{
+.manform_table{
     display: block;
     outline: 0;
     padding-bottom: 10px;
@@ -65,47 +65,58 @@ body
     margin: 8px;
 }
 
-.manform_label_th{
+.manform_table_th{
+    background-color: #2E3134;
+    padding-left: 10px;
     font-weight: bold;
     font-style: italic;
-    padding: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
     color: rgba(189,189,189,.7);
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     text-align: left;
 }
 
-.manform_label_td{
-    padding: 10px;
+.manform_table_td{
+    padding-left: 10px;
+    justify-content: left;
+    padding-top:10px;
+    padding-right:10px;
+    padding-bottom:10px;
     color: rgba(189,189,189,.7);
-    letter-spacing: 1px;
+    letter-spacing: .5px;
+}
+
+.manform_table_input{
+    font:13px Raleway;
+    width: 90%;
+    padding-left: 5px;
+    height: 30px;
+    background-color: #939393;
+    color: #2E3134;
+    font-weight: bold;
+    outline: 0;
+    border: none;
+    letter-spacing: .5px;
+    border-radius: 5px;
 }
 
 
 .manform_table{
-    border: 1;
-    width:100%;
+    /*border: 1px solid;*/
+    width:90%;
+    padding: 10px;
 }
 
 th{
+     /*border: .1px dotted;*/
     width:25%;
 }
 
-tr{
+td{
+     /*border: .1px dotted;*/
     width:25%;
-}
-
-.manform_text{
-    outline: 0;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    border-radius: 10px;
-    border: none;
-    color: rgba(189,189,189,.7);
-    letter-spacing: .8px;
-    margin-top: 8px;
-    margin-bottom: 8px;
-    margin-right: 8px;
-    font:12px Raleway;
 }
 
 .material-icons {
@@ -136,7 +147,7 @@ tr{
 .manform_button{
     margin: -20px -50px; 
     position:relative;
-    margin-top: 5%; 
+    margin-top: 1%; 
     left:50%;
     height: 50px;
     width: 110px;
