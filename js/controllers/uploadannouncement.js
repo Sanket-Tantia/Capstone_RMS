@@ -25,6 +25,42 @@ app.controller('uploadAnnouncementCtrl', ['$scope','multipartForm',function($sco
 
 
 
+	// $rootScope.myValue = false;
+	// $rootScope.title = "Upload Announcement";
+	// $scope.Success_Msg = false;
+	// $scope.uploadAnnouncements = function() {
+	// 	var announcementObj = {
+	// 		title : $scope.annTitle,
+	// 		description :$scope.description,
+	// 		start_date : $scope.startDate,
+	// 		end_date: $scope.endDate,
+	// 		send_email : $scope.emailOption,
+	// 		alert_email : $scope.emailTo
+	// 	};
+	// 	console.log(announcementObj.isEmailChecked);
+	// 	var result = $http.post('/announcements', announcementObj);
+	// 	alert("Announcement uploaded successfully");
+	// 	$("#annTitle").val("");
+	// 	$("#description").val("");
+	// 	$("#startDate").val("");
+	// 	$("#endDate").val("");
+	// 	$("#emailOption").val("");
+	// 	$("#emailTo").val("");
+
+	// 	result.success(function(data,status,headers,config){
+
+	// 	});
+	// 	res.error(function(data, status, headers, config) {
+	// 		$("#annTitle").val("");
+	// 		$("#description").val("");
+	// 		$("#startDate").val("");
+	// 		$("#endDate").val("");
+	// 		$("#emailOption").val("");
+	// 		$("#emailTo").val("");
+	// 	});
+	// }
+
+
 	$scope.submit = function(){
 		var uploadUrl = '';
 		console.log($scope.imageFile);
