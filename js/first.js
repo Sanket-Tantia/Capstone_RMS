@@ -14,7 +14,7 @@ app.config(function($stateProvider, $urlRouterProvider){
     templateUrl: 'operations.html',
     controller: 'OpCtrl'
   })
-  
+
   .state('announcement',{
     url: '/announcement',
     templateUrl: 'announcement.html',
@@ -35,5 +35,27 @@ app.config(function($stateProvider, $urlRouterProvider){
     templateUrl: 'manager.html',
     //controller: 'managerCtrl'
   })
+  .state('finance',{
+    url: '/finance',
+    templateUrl: 'finance.html',
+    //controller: 'financeCtrl'
+  })
+  .state('humanresources',{
+    url: '/humanresources',
+    templateUrl: 'humanresources.html',
+    //controller: 'humanresourcesCtrl'
+  })
+  .state('ITDepartment',{
+    url: '/ITDepartment',
+    templateUrl: 'ITDepartment.html',
+    //controller: 'ITDepartmentCtrl'
+  })
+  .state('administartion',{
+    url: '/administartion',
+    templateUrl: 'administartion.html',
+    //controller: 'administartionCtrl'
+  })
+
+
   $urlRouterProvider.otherwise('/login');
 });
