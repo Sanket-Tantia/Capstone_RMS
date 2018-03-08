@@ -1,18 +1,17 @@
 
 
 <link rel="stylesheet" href="css/login.css">
-<div class="agile-login">
-	<div class="login_shadowbox">
-		<h2 class="login_h2">Sign In</h2>
-		<div class="login_form">
-			<form>
-				<input id="login_username" class="login_text" type="text" name="name" placeholder="Username" required/>
-				<br><br>
-				<input id="login_password" class="login_text" type="password" name="password" placeholder="Password" required />
-				<a class ="login_link" href="#" class="pass">Forgot Password?</a>
-				<input type="submit" class="login_button" ng-click="login()" value="Submit" />
-			</form>
-
+<div class="main-w3layouts-form">
+	<h2>Sign In</h2>
+	<form action="#" method="post">
+		<div class="fields-w3-agileits">
+			<span class="fa fa-user" aria-hidden="true"></span>
+			<input type="text" name="Username" required="" placeholder="Username" />
 		</div>
-	</div>
+		<div class="fields-w3-agileits">
+			<span class="fa fa-key" aria-hidden="true"></span>
+			<input type="password" name="Password" required="" placeholder="Password" />
+		</div>
+		<input type="submit" ng-click="login()" value="Login" />
+	</form>
 </div>

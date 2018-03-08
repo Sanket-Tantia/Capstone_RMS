@@ -1,173 +1,281 @@
 @import 'https://fonts.googleapis.com/css?family=Raleway';
 
-.login_h2{
-	margin: 0;
-	padding: 0;
-	font-family: 'Raleway', Raleway;
-    color: #80685e;
-}
-
-.login_form a:focus, .login_form a:hover {
-	text-decoration: none;
-	outline: none;
-}
-body{
-    margin: 0;
-    zoom: 0.9;
-    -moz-transform: scale(0.9);
-}
-
-
-.agile-login {
-	padding-top: 230px;
-    background: url('../img/background.jpg') no-repeat;
+body {
+    font-family: Raleway;
+    font-size: 100%;
+    background: url(/img/dope.jpeg);
     background-size: cover;
-    margin: 0;
-    min-height: 86vh;
-    background-position: center;
-}
-.login_shadowbox {
-    width: 100%;
-    height: 450px;
-    margin: auto;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-attachment: fixed;
     text-align: center;
-    padding: 3% 0px;
-    background-color: rgba(255,205,210 ,0.3);/*rgba(255,138,128 ,0.2);*/
-    /*background-color: rgba(7, 5, 5, 0.6);*/
-	webkit-box-shadow: 10px 3px 66px -19px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 3px 66px -19px rgba(0,0,0,0.75);
-    box-shadow: 10px 3px 66px -19px rgba(0,0,0,0.75);
-}
-.login_form {
-    display: inline-block;
-    width: 350px;
-    margin: auto;
-    text-align: left;
 }
 
-.login_text {
-    width: 82%;
-    letter-spacing: 1px;
-    padding: 15px 10px 15px 50px;
-    font-size: 15px;
-    /*background-color: rgba(87, 102, 103, 0.59);*/
-    border-radius: 25px;
-    outline: 0;
-    color: #3d3633;
-    border: 2px solid #7a6c66;
-    background-color:  rgba(120,20,25, 0.69);
+.main-w3layouts-form {
+    margin: 2em auto 0;
+    width: 30%;
+    background: rgba(0, 0, 0, 0.70);
+    padding: 2.3em 2em;
+    margin-top:175px;
+    border-radius:10px;
 }
 
-#login_username{
-    background: url("../img/mail.png") no-repeat 13px 11px;
-    background-size: 25px;
-}
-
-#login_password{
-    background: url("../img/password.png") no-repeat 13px 11px;
-    background-size: 25px;
-}
-
-.login_shadowbox h2 {
-	margin-bottom: 30px;
-    padding-top: 50px;
-    font-size: 26px;
-    color: #3d3633;
-    font-weight: 500;
+.main-w3layouts-form h2 {
+    color: #FFB74D;
+    font-weight: 100;
+    font-size: 25px;
+    margin-bottom: 1em;
     letter-spacing: 2px;
-    /*box-shadow: inset 0 0 100px #ffffff;*/
-}
-a.login_link {
-    font-size: 15px;
-	    color: #7a6c66;
-		font-family: 'Raleway', Raleway;
-		    letter-spacing: 2px;
-            padding-top: 5px;
-}
-.login_form a {
-    display: block;
-    text-align: right;
-	    margin: 18px 0px;
+    font-family: Raleway;
 }
 
-.login_button {
-	margin: 10px auto;
-    padding: 9px 60px;
-    border-radius: 25px;
-    font-size: 18px;
-    border: none;
-    background-color: transparent;
-    color: #3d3633;
-    outline: 0;
-    border: 2px solid #7a6c66;
-	cursor: pointer;
+.main-w3layouts-form input[type="text"],
+.main-w3layouts-form input[type="password"] {
+    font-family: Raleway;;
     width: 100%;
-	letter-spacing: 1px;
-    font-family: 'Raleway', Raleway;
+    padding: 12px 20px;
+    background: rgba(0, 0, 0, 0.54);
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    font-size: 14px;
+    color: #FFCC80;
+    border: none;
+    outline: none;
+    border-radius: 5px;
 }
-.login_button:hover {
+
+.main-w3layouts-form .fields-w3-agileits:nth-child(1) {
+    margin-bottom: 1.3em;
+}
+
+.main-w3layouts-form input[type="submit"] {
+    margin-top: 5%;
+    font-family: Raleway;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 100;
+    letter-spacing: 3px;
+    border: none;
     color: #fff;
-    background-color:  rgba(220,120,105, 0.69);
+    background: #616161;
+    padding: 0.7em 3em;
+    outline: none;
+    cursor: pointer;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    border-radius: 5px;
 }
-::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color: #948984;
+
+.main-w3layouts-form input[type="submit"]:hover {
+    background: #ffcc54;
+    color: #000;
 }
-::-moz-placeholder { /* Firefox 19+ */
-  color: #948984;
+
+.fields-w3-agileits {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    padding: 12px 12px 12px 4px;
+    background: rgba(132, 132, 132, 0.27);
 }
-:-ms-input-placeholder { /* IE 10+ */
-  color: #948984;
+
+.fields-w3-agileits span {
+    flex-basis: 10%;
+    -webkit-flex-basis: 10%;
+    display: inline-block;
+    font-size: 17px;
+    color: #fff;
+    line-height: 40px;
 }
-:-moz-placeholder { /* Firefox 18- */
-  color: #948984;
+
+.fields-w3-agileits input[type="text"],
+.fields-w3-agileits input[type="password"] {
+    flex-basis: 90%;
+    -webkit-flex-basis: 90%;
 }
-@media screen and (max-width: 568px) {
-    input[type="text"] {
-        background: url("../img/mail.png") no-repeat 13px 8px;
-        background-size: 20px;
+
+
+/*--//main-w3layouts-form--*/
+
+::-webkit-input-placeholder {
+    color: #FFF9C4;
+}
+
+:-moz-placeholder {
+    /* Firefox 18- */
+    color: #FFF9C4;
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #FFF9C4;
+}
+
+:-ms-input-placeholder {
+    color: #FFF9C4;
+}
+
+
+/*--responsive-design--*/
+
+@media(max-width:1440px) {
+    .main-w3layouts-form {
+        width: 35%;
     }
+}
 
-    input[type="password"] {
-        background: url("../img/password.png") no-repeat 13px 7px;
-        background-size: 20px;
+@media(max-width:1280px) {
+    .main-w3layouts-form {
+        width: 38%;
     }
 }
 
-@media screen and (max-width: 480px){
-	.login_shadowbox h2 {
-    font-size: 26px;
+@media(max-width:1080px) {
+    .main-w3layouts-form {
+        width: 45%;
+    }
+}
 
+@media(max-width:1024px) {
+    .main-w3layouts-form input[type="text"],
+    .main-w3layouts-form input[type="password"] {
+        padding: 12px 15px;
+    }
+    .fields-w3-agileits {
+        padding: 10px 10px 10px 1px;
+    }
+    .main-w3layouts-form .fields-w3-agileits:nth-child(1) {
+        margin-bottom: 1em;
+    }
+    .main-w3layouts-form {
+        margin: 1.5em auto 0;
+        padding: 2em 2em;
+    }
+    .main-w3layouts-form h2 {
+        font-size: 22px;
+    }
 }
-.login_shadowbox {
-    width: 370px;
+
+@media(max-width:900px) {
+    .main-w3layouts-form {
+        width: 50%;
+    }
 }
-	
+
+@media(max-width:800px) {
+    .main-w3layouts-form h2 {
+        font-size: 20px;
+    }
+    .main-w3layouts-form {
+        width: 55%;
+    }
 }
-@media screen and (max-width: 414px){
-.login_shadowbox {
-    width: 320px;
+
+@media(max-width:768px) {
+    .main-w3layouts-form {
+        margin: 2.5em auto 0;
+    }
 }
-.login_form {
-	    width: 300px;
+
+@media(max-width:767px) {
+    .main-w3layouts-form {
+        margin: 1.5em auto 0;
+    }
+    .main-w3layouts-form {
+        width: 57%;
+    }
 }
-.login_shadowbox h2 {
-    font-size: 20px;
-    margin-bottom: 15px;
+
+@media(max-width:667px) {
+    .main-w3layouts-form {
+        width: 60%;
+    }
+    .fields-w3-agileits input[type="text"],
+    .fields-w3-agileits input[type="password"] {
+        flex-basis: 88%;
+        -webkit-flex-basis: 88%;
+    }
+    .fields-w3-agileits span {
+        flex-basis: 12%;
+        -webkit-flex-basis: 12%;
+    }
+    .main-w3layouts-form h2 {
+        font-size: 19px;
+    }
 }
+
+@media(max-width:640px) {
+    .main-w3layouts-form input[type="submit"] {
+        font-size: 14px;
+        padding: 0.7em 4em;
+    }
+    .main-w3layouts-form input[type="text"],
+    .main-w3layouts-form input[type="password"] {
+        font-size: 13.5px;
+    }
+    .fields-w3-agileits span {
+        font-size: 16px;
+    }
 }
-@media screen and (max-width: 320px){
-.login_form {
-    width: 270px;
+
+@media(max-width:480px) {
+    .main-w3layouts-form {
+        width: 75%;
+    }
+    .main-w3layouts-form {
+        margin: 1em auto 0;
+    }
+    h1 {
+        margin: .6em 0 0;
+    }
 }
-.login_shadowbox {
-    width: 280px;
+
+@media(max-width:440px) {
+    .main-w3layouts-form {
+        width: 80%;
+        padding: 1.5em 1.5em;
+    }
 }
-.login_shadowbox h2 {
-    font-size: 18px;
-    margin-bottom: 10px;
+
+@media(max-width:414px) {
+    .fields-w3-agileits span {
+        flex-basis: 15%;
+        -webkit-flex-basis: 15%;
+    }
+    .fields-w3-agileits input[type="text"],
+    .fields-w3-agileits input[type="password"] {
+        flex-basis: 85%;
+        -webkit-flex-basis: 85%;
+    }
+    .main-w3layouts-form h2 {
+        font-size: 17px;
+        letter-spacing: 1px;
+    }
 }
-input[type="submit"] {
-    margin: 10px auto;
-	    padding: 8px 60px;
+
+@media(max-width:375px) {
+    .main-w3layouts-form {
+        margin: 0.5em auto 0;
+    }
 }
+
+@media(max-width:320px) {
+    .fields-w3-agileits span {
+        flex-basis: 18%;
+        -webkit-flex-basis: 18%;
+    }
+    .fields-w3-agileits input[type="text"],
+    .fields-w3-agileits input[type="password"] {
+        flex-basis: 82%;
+        -webkit-flex-basis: 82%;
+    }
 }
+
+
+/*--//responsive-design--*/

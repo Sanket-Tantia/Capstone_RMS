@@ -1,4 +1,24 @@
 <link rel="stylesheet" href="css/finance.css">
+
+<div class="nav_bar_container navbar_color borderXwidth same_line_nav">
+	<div class="alignLeft">
+		<a href="#/announcement" class="animateMe">TekSystemsRMS</a>
+	</div>
+	<div class="alignRight">
+		<a href="#/announcement" class="animateMe">Announcement</a>
+		<a href="#/operations" class="animateMe">Operations</a>
+		<a href="#/exit_portal" class="animateMe">Exit Portal</a>
+		<a><i class="material-icons">notifications</i></a>
+		<div class="dropdown">
+			<a><i class="material-icons">person</i></a>
+			<div class="dropdown-content" >
+				<a href="#" >My Account</a>
+				<a href="#">Sign Out</a>
+			</div>
+		</div>
+	</div>
+</div>
+
 <h1 class="manform_heading1">Exit Clearance Form</h1>
 <form id="manform" method="post">
 	<h2>Employee Information</h2>
@@ -76,30 +96,30 @@
 			<td class="manform_table_td"><input class="manform_table_input" type="text" ng-value="date1"></td>
 			<td class="manform_table_td"><input class="manform_table_input" type="text" ng-value="remarks1"></td>
 		</tr>
-    <tr>
+		<tr>
 			<td class="manform_table_td">Medical Allowances</td>
 			<td class="manform_table_td"><input class="manform_table_input" type="text" ng-value="dues1"></td>
 			<td class="manform_table_td"><input class="manform_table_input" type="text" ng-value="date1"></td>
 			<td class="manform_table_td"><input class="manform_table_input" type="text" ng-value="remarks1"></td>
 		</tr>
-    <tr>
-      <td class="manform_table_td">Travel Allowance/Per Diem </td>
-      <td class="manform_table_td"><input class="manform_table_input" type="text" ng-value="dues1"></td>
-      <td class="manform_table_td"><input class="manform_table_input" type="text" ng-value="date1"></td>
-      <td class="manform_table_td"><input class="manform_table_input" type="text" ng-value="remarks1"></td>
-    </tr>
-    <tr>
-      <td class="manform_table_td">Food Coupons</td>
-      <td class="manform_table_td"><input class="manform_table_input" type="text" ng-value="dues1"></td>
-      <td class="manform_table_td"><input class="manform_table_input" type="text" ng-value="date1"></td>
-      <td class="manform_table_td"><input class="manform_table_input" type="text" ng-value="remarks1"></td>
-    </tr>
-    <tr>
-      <td class="manform_table_td">Others</td>
-      <td class="manform_table_td"><input class="manform_table_input" type="text" ng-value="dues1"></td>
-      <td class="manform_table_td"><input class="manform_table_input" type="text" ng-value="date1"></td>
-      <td class="manform_table_td"><input class="manform_table_input" type="text" ng-value="remarks1"></td>
-    </tr>
+		<tr>
+			<td class="manform_table_td">Travel Allowance/Per Diem </td>
+			<td class="manform_table_td"><input class="manform_table_input" type="text" ng-value="dues1"></td>
+			<td class="manform_table_td"><input class="manform_table_input" type="text" ng-value="date1"></td>
+			<td class="manform_table_td"><input class="manform_table_input" type="text" ng-value="remarks1"></td>
+		</tr>
+		<tr>
+			<td class="manform_table_td">Food Coupons</td>
+			<td class="manform_table_td"><input class="manform_table_input" type="text" ng-value="dues1"></td>
+			<td class="manform_table_td"><input class="manform_table_input" type="text" ng-value="date1"></td>
+			<td class="manform_table_td"><input class="manform_table_input" type="text" ng-value="remarks1"></td>
+		</tr>
+		<tr>
+			<td class="manform_table_td">Others</td>
+			<td class="manform_table_td"><input class="manform_table_input" type="text" ng-value="dues1"></td>
+			<td class="manform_table_td"><input class="manform_table_input" type="text" ng-value="date1"></td>
+			<td class="manform_table_td"><input class="manform_table_input" type="text" ng-value="remarks1"></td>
+		</tr>
 
 	</table>
 	<button class="manform_button" ng-click=submit()>Submit</button>

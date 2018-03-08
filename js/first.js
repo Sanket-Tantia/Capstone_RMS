@@ -14,7 +14,6 @@ app.config(function($stateProvider, $urlRouterProvider){
     templateUrl: 'operations.html',
     controller: 'OpCtrl'
   })
-
   .state('announcement',{
     url: '/announcement',
     templateUrl: 'announcement.html',
@@ -53,6 +52,11 @@ app.config(function($stateProvider, $urlRouterProvider){
   .state('administartion',{
     url: '/administartion',
     templateUrl: 'administartion.html',
+    //controller: 'administartionCtrl'
+  })
+  .state('exitportal',{
+    url: '/exitportal',
+    templateUrl: 'exitportal.html',
     //controller: 'administartionCtrl'
   })
 
