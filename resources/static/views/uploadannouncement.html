@@ -1,0 +1,58 @@
+
+<link rel="stylesheet" href="css/uploadannouncement.css"/>
+<div class="nav_bar_container navbar_color borderXwidth">
+  <!-- <div style="text-align: left;vertical-align: middle;">
+    <a>TEKSystems RMS</a>
+</div> -->
+<a class="animateMe">Announcement</a>
+<a class="animateMe">Operations</a>
+<a class="animateMe">Exit Portal</a>
+<a><i class="material-icons">notifications</i></a>
+<div class="dropdown"  >
+	<a><i class="material-icons">person_outline</i></a>
+	<div class="dropdown-content" >
+		<a href="#" >My Account</a>
+		<a href="#">Sign Out</a>
+	</div>
+</div>
+</div>
+<h1 class="upload_heading">Announcement Details</h1>
+
+<form id="upload" method="post" enctype="multipart/form-data">
+	<div class="same_line">
+		<label class="upload_label">Title</label>
+		<input class="upload_input" type="text" name="title" placeholder="Announcement's title" required>
+	</div>
+	<div class="same_line">
+		<label class="upload_label">Description</label>
+		<input class="upload_input" type="text" name="description" placeholder="Describe your announcement" required>
+	</div>
+	<div class="same_line">
+		<label class="upload_label">Start Date</label>
+		<input class="upload_input" type="date" name="start_date" placeholder="(DD/MM/YYYY)" required>
+	</div>
+	<div class="same_line">
+		<label class="upload_label">End Date</label>
+		<input class="upload_input" type="date" name="end_date" placeholder="(DD/MM/YYYY)" required>
+	</div>
+	<div class="same_line">
+		<label class="upload_label" for="check_mail">Send Mail</label>
+		<input id="checked" type="checkbox" name="check_mail" ng-model="check_mail" ng-true-value="'Yes'" ng-false-value="'No'" ng-click="checked()">
+	</div>
+	<div  id="showWhenChecked" class="same_line">
+		<label class="upload_label">Email Id</label>
+		<input class="upload_input" type="email" name="send_mail" placeholder="People wou want to inform">
+	</div>
+	<br>
+	<div id="drop">
+		<h2>Select Image</h2>
+		<div class="file-upload">
+			<div class="file-select">
+				<div class="file-select-button" id="fileName">Choose File</div>
+				<div class="file-select-name" id="noFile">No file chosen...</div> 
+				<input type="file" name="chooseFile" id="chooseFile" file-model="imageFile" required>
+			</div>
+		</div>
+	</div>
+	<button class="upload_button" ng-click=submit()>Submit</button>
+</form>

@@ -1,0 +1,148 @@
+@import 'https://fonts.googleapis.com/css?family=Raleway';
+
+body
+{
+    background-color:#ebebec;
+    background-image:-webkit-radial-gradient(center, #ebebec, #b4b4b4);
+    background-image:-moz-radial-gradient(center, #ebebec, #b4b4b4);
+    background-image:radial-gradient(center, #ebebec, #b4b4b4);
+    margin: 0px;
+    font:14px/1.2 Raleway;
+    color: rgba(189,189,189,.8);
+}
+
+#opform{
+    width:60%;
+    margin: 0 auto;
+    font:14px/1.2 Raleway;
+    background-color:#373a3d;
+    background-image:-webkit-linear-gradient(top, #373a3d, #313437);
+    background-image:-moz-linear-gradient(top, #373a3d, #313437);
+    background-image:linear-gradient(top, #373a3d, #313437);
+    border-radius:11px;
+    margin:100px auto 100px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+}
+
+.opform_input{
+    width: 60%;
+    outline: 0;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #2E3134;
+    color: rgba(189,189,189,.8);
+    letter-spacing: 1px;
+    margin: 8px;
+}
+
+.opform_label{
+    display: block;
+    outline: 0;
+    padding-left: 7px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-radius: 10px;
+    border: none;
+    color: rgba(189,189,189,.7);
+    letter-spacing: 1px;
+    margin: 8px;
+}
+
+.opform_text{
+    outline: 0;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-radius: 10px;
+    border: none;
+    color: rgba(189,189,189,.7);
+    letter-spacing: .8px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-right: 8px;
+    font:12px Raleway;
+}
+
+.left{
+    vertical-align: middle;
+    float: left;
+    width: 50%;
+
+}
+
+.right{
+    vertical-align: middle;
+    float: right;
+    width: 50%;    
+}
+
+.material-icons {
+    vertical-align: middle;
+    font-size: 25px;
+}
+
+.left label, .right label, .left input[type="radio"]{
+    display: inline-block;
+}
+
+.same_line{
+    clear: left;
+    /*clear: right;*/
+}
+
+.same_line div{
+    display:inline-block;
+}
+
+input[type="radio"]{
+  margin: 0 5px 0 5px;
+  margin-left: 10px;
+}
+
+.opform_heading1{
+    margin: 10%;
+    margin-bottom:-30px; 
+    text-align: center;
+    color:#373a3d;
+}
+
+.opform_heading2{
+    margin-top: 10%;
+}
+
+#flight_collapsible,#car_collapsible,#hotel_collapsible{
+    display: none;
+}
+
+.opform_button{
+    margin: -20px -50px; 
+    position:relative;
+    margin-top: 5%; 
+    left:50%;
+    height: 50px;
+    width: 110px;
+    background: #348AA7;
+    margin-right:40%;
+    border: none;
+    outline: none;
+    color: white;
+    font-weight: 200px;
+    font-size: 18px;
+    border-radius: 3px;
+    box-shadow: 0 5px 0px darken(#348AA7,0%);
+    border-bottom: 2px solid darken(#348AA7,3%);
+    margin-bottom: 3%;
+    font:20px Raleway;
+    &:hover{
+        background: darken(#348AA7,100%);
+        box-shadow: 0 4px 1px darken(#348AA7,100%);
+        border-bottom: 2px solid darken(#348AA7,100%);
+        transition: all 0.1s ease-in;
+    }
+
+    &:active{
+        transform:translateY(4px);
+        border-bottom-width: 2px;
+    }
+}

@@ -1,0 +1,154 @@
+<link rel="stylesheet" href="css/humanresources.css"/>
+<h1 class="manform_heading1">Exit Clearance Form</h1>
+<form id="manform" method="post">
+	<h2>Employee Information</h2>
+	<div class="same_line">
+		<div class="left">
+			<i class="material-icons">person</i>
+			<label class="manform_label">Name :</label>
+			<input class="manform_input"  type="text" placeholder="Enter employee name" ng-model="employeeName" required>
+		</div>
+		<div class="right">
+			<i class="material-icons">perm_identity</i>
+			<label class="manform_label">Employee ID :</label>
+			<input class="manform_input"  type="text" placeholder="Enter employee Id" ng-model="employeeId" required>
+		</div>
+	</div>
+	<div class="same_line">
+		<div class="left">
+			<i class="material-icons">date_range</i>
+			<label class="manform_label">Date of joining :</label>
+			<input class="manform_input"  type="text" placeholder="Enter date" ng-model="doj" onfocus="(this.type='date')" onblur="(this.type='text')" required>
+		</div>
+		<div class="right">
+			<i class="material-icons">date_range</i>
+			<label class="manform_label">Scheduled last working date:</label>
+			<input class="manform_input"  type="text" placeholder="Enter date" ng-model="scheduledLastWorkingDate" onfocus="(this.type='date')" onblur="(this.type='text')" required>
+		</div>
+	</div>
+	<div class="same_line">
+		<div class="left">
+			<i class="material-icons">work</i>
+			<label class="manform_label">BU :</label>
+			<input class="manform_input" type="text" placeholder="Business unit" ng-model="bu" required>
+		</div>
+		<div class="right">
+			<i class="material-icons">location_on</i>
+			<label class="manform_label">Location :</label>
+			<input class="manform_input"  type="text" placeholder="Work place" ng-model="location" required>
+		</div>
+	</div>
+	<div class="same_line">
+		<div class="left">
+			<i class="material-icons">people_outline</i>
+			<label class="manform_label">Reporting Manager :</label>
+			<input class="manform_input"  type="text" placeholder="Enter name" ng-model="reportingManager" required>
+		</div>
+		<div class="right">
+			<i class="material-icons">date_range</i>
+			<label class="manform_label">Actual last working date:</label>
+			<input class="manform_input"  type="text" placeholder="Enter date" ng-model="actualLastWorkingDate" onfocus="(this.type='date')" onblur="(this.type='text')" required>
+		</div>
+	</div>
+	<h2 class="manform_heading2">Operations / HR Department </h2>
+	<table class="manform_table">
+		<tr>
+      <th class="manform_table_th">Particulars</th>
+			<th class="manform_table_th">Projects assigned if any</th>
+			<th class="manform_table_th">Signature & Date</th>
+			<th class="manform_table_th">Remarks</th>
+		</tr>
+		<tr>
+			<td class="manform_table_td">Disable of Time and Expense system Login   </td>
+			<td class="manform_table_td"><input class="manform_table_input" type="text" ng-value="dues1"></td>
+			<td class="manform_table_td"><input class="manform_table_input" type="text" ng-value="date1"></td>
+			<td class="manform_table_td"><input class="manform_table_input" type="text" ng-value="remarks1"></td>
+		</tr>
+  </table>
+  <h2 class="manform_heading2"> HR Department  </h2>
+  <table class="manform_table">
+    <tr>
+      <th class="manform_table_th">Particulars</th>
+			<th class="manform_table_th">Projects assigned if any</th>
+			<th class="manform_table_th">Signature & Date</th>
+			<th class="manform_table_th">Remarks</th>
+		</tr>
+		<tr>
+			<td class="manform_table_td">Web Module  </td>
+			<td class="manform_table_td"><input class="manform_table_input" type="text" ng-value="dues1"></td>
+			<td class="manform_table_td"><input class="manform_table_input" type="text" ng-value="date1"></td>
+			<td class="manform_table_td"><input class="manform_table_input" type="text" ng-value="remarks1"></td>
+		</tr>
+		<tr>
+			<td class="manform_table_td">Leave Balance </td>
+			<td class="manform_table_td"><input class="manform_table_input" type="text" ng-value="dues1"></td>
+			<td class="manform_table_td"><input class="manform_table_input" type="text" ng-value="date1"></td>
+			<td class="manform_table_td"><input class="manform_table_input" type="text" ng-value="remarks1"></td>
+		</tr>
+    <tr>
+			<td class="manform_table_td">Recoverable if any  (Bonus/Notice Period/Etc) </td>
+			<td class="manform_table_td"><input class="manform_table_input" type="text" ng-value="dues1"></td>
+			<td class="manform_table_td"><input class="manform_table_input" type="text" ng-value="date1"></td>
+			<td class="manform_table_td"><input class="manform_table_input" type="text" ng-value="remarks1"></td>
+		</tr>
+    <tr>
+      <td class="manform_table_td">Others </td>
+      <td class="manform_table_td"><input class="manform_table_input" type="text" ng-value="dues1"></td>
+      <td class="manform_table_td"><input class="manform_table_input" type="text" ng-value="date1"></td>
+      <td class="manform_table_td"><input class="manform_table_input" type="text" ng-value="remarks1"></td>
+    </tr>
+  </table>
+  <h2 class="manform_heading2"> Summary of Pending Claims, if any, to be captured by employee   </h2>
+  <table class="manform_table">
+    <tr>
+      <th class="manform_table_th">Particulars</th>
+      <th class="manform_table_th">Projects assigned if any</th>
+      <th class="manform_table_th">Signature & Date</th>
+      <th class="manform_table_th">Remarks</th>
+    </tr>
+    <tr>
+      <td class="manform_table_td"></td>
+      <td class="manform_table_td"><input class="manform_table_input" type="text" ng-value="dues1"></td>
+      <td class="manform_table_td"><input class="manform_table_input" type="text" ng-value="date1"></td>
+      <td class="manform_table_td"><input class="manform_table_input" type="text" ng-value="remarks1"></td>
+    </tr>
+    <tr>
+      <td class="manform_table_td"></td>
+      <td class="manform_table_td"><input class="manform_table_input" type="text" ng-value="dues1"></td>
+      <td class="manform_table_td"><input class="manform_table_input" type="text" ng-value="date1"></td>
+      <td class="manform_table_td"><input class="manform_table_input" type="text" ng-value="remarks1"></td>
+    </tr>
+  </table>
+  	  <h2 class="manform_heading2">Contact Information for Communication</h2>
+  	<div class="same_line">
+  		<div class="left">
+  			<label class="manform_label">Postal Adress</label>
+  			<input class="manform_input"  type="text" placeholder="Enter Postal Address" ng-model="postaladdress" required>
+  		</div>
+  		<div class="right">
+  			<label class="manform_label">E-Mail</label>
+  			<input class="manform_input"  type="text" placeholder="Enter Email" ng-model="Emailid" required>
+  		</div>
+  	</div>
+  	<div class="same_line">
+  		<div class="left">
+  		<label class="manform_label">  Land/Cell Phone:</label>
+  			<input class="manform_input"  type="text" placeholder="Enter Land/CellPhone" ng-model="cellphone" required>
+  		</div>
+  		<div class="right">
+  			<label class="manform_label">Scheduled last working date:</label>
+  			<input class="manform_input"  type="text" placeholder="Enter date" ng-model="scheduledLastWorkingDate" required>
+  		</div>
+  	</div>
+    <div class="same_line">
+  		<div class="left">
+  		<label class="manform_label">Received & Verified By:</label>
+  			<input class="manform_input"  type="text" ng-model="rv"  required>
+  		</div>
+  		<div class="right">
+  		<label class="manform_label"> Date:</label>
+  			<input class="manform_input"  type="date" placeholder="Enter date" ng-model="scheduledLastWorkingDate" required>
+  		</div>
+  	</div>
+<button class="manform_button" ng-click=submit()>Submit</button>
+</form>

@@ -1,0 +1,50 @@
+
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+<link rel="stylesheet" href="css/announcement.css"/>
+
+<div class="nav_bar_container navbar_color borderXwidth">
+  <!-- <div style="text-align: left;vertical-align: middle;">
+    <a>TEKSystems RMS</a>
+  </div> -->
+  <a class="animateMe">Announcement</a>
+  <a href="#/newform" class="animateMe">Operations</a>
+  <a class="animateMe">Exit Portal</a>
+  <a><i class="material-icons">notifications</i></a>
+  <a href="#/uploadannouncement"><i class="material-icons">library_add</i></a>
+  <div class="dropdown"  >
+    <a><i class="material-icons">person_outline</i></a>
+    <div class="dropdown-content" >
+      <a href="#" >My Account</a>
+      <a href="#">Sign Out</a>
+    </div>
+  </div>
+</div>
+
+
+<div id="carousel_announcements">
+  <carousel interval="myInterval" class="ui-bootstrap-carousel">
+    <slide ng-repeat="slide in slides" active="slide.active">
+      <img ng-src="{{slide.image}}">
+      <div class="carousel-caption">
+        <h4>Slide {{$index+1}}</h4>
+      </div>
+    </slide>
+  </carousel>
+</div>
+
+<div id="section05">
+  Upcoming announcements
+</div>
+
+<div class="announcement_container">
+  <div align="center" class="announcement_inner announcement_content-box" ng-repeat="gridItem in gridItems">
+    <img class="content-box-image" src="{{ gridItem.img }}" alt="tech image"  style="height:200px; width:350px;"/>
+    <h1 class="content-box-header">
+      {{ gridItem.headerText }}
+    </h1>
+    <p class="content-box-blurb">
+      {{ gridItem.blurbText }}
+    </p>
+  </div>
+</div><!-- /.dynamic-grid -->
+
